@@ -68,18 +68,23 @@ nav a {
 }
 /* Jumbotron */
 
+.jumbotron {
+    height: 700px;
+    margin-bottom: 80px;
+}
 .jumbotron-img-container {
     height: 700px;
     width: 1200px;
+    overflow: hidden;
 }
 
 .jumbotron-img-container::after {
     content: '';
     position: absolute;
     background-color: rgba(0, 0, 0, .55);
-    height: 900px;
+    height: 700px;
     width: 1500px;
-    top: 0;
+    top: 69px;
     left: 0;
 }
 
