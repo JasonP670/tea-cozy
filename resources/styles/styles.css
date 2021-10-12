@@ -61,7 +61,8 @@ nav a {
 /* App */
 .app-container {
     margin-top: 69px;
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,20 +71,20 @@ nav a {
 
 .jumbotron {
     height: 700px;
+    width: 100%;
+    margin-top: 69px;
     margin-bottom: 80px;
-}
-.jumbotron-img-container {
-    height: 700px;
-    width: 1200px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../images/img-mission-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .banner {
-    position: relative;
-    bottom: 350px;
-    left: 0;
     background-color: black;
-    width: 1200px;
+    width: 100%;
     text-align: center;
     padding: 1px;
 }
@@ -163,4 +164,18 @@ section h2 {
     flex-direction: column;
     align-items: center;
 }
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
 /* Footer */
+footer {
+    text-align: left;
+    margin-left: 20px;
+}
