@@ -78,16 +78,6 @@ nav a {
     overflow: hidden;
 }
 
-.jumbotron-img-container::after {
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, .55);
-    height: 700px;
-    width: 1500px;
-    top: 69px;
-    left: 0;
-}
-
 .banner {
     position: relative;
     bottom: 350px;
@@ -114,20 +104,20 @@ section h2 {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 30px;
 }
 
 .card-img-container{
     width: 300px;
     height: 200px;
     overflow: hidden;
-
 }
 
 .card img {
@@ -139,3 +129,25 @@ section h2 {
 .card p {
     font-weight: 700;
 }
+
+/* Locations */
+
+.locations {
+    margin-top: 80px;
+
+}
+
+.locations-img-container {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.locations-img-container img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -30px;
+}
+
+
+/* Footer */
