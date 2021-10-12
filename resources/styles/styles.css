@@ -6,11 +6,11 @@
 
 html {
     font-size: 22px;
-    background-color: black;
-    color: seashell;
 }
 
 body {
+    color: seashell;
+    background-color: black;
     font-family: Helvetica, sans-serif;
     opacity: 0.9;
     margin: 0;
@@ -27,6 +27,8 @@ header {
     top: 0;
     width: 100%;
     align-items: center;
+    z-index: 1;
+    background-color: black;
 }
 
 .logo {
@@ -71,6 +73,16 @@ nav a {
     width: 1200px;
 }
 
+.jumbotron-img-container::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, .55);
+    height: 900px;
+    width: 1500px;
+    top: 0;
+    left: 0;
+}
+
 .banner {
     position: relative;
     bottom: 350px;
@@ -79,4 +91,46 @@ nav a {
     width: 1200px;
     text-align: center;
     padding: 1px;
+}
+
+
+/* Card Container */
+section {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 { 
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img-container{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-weight: 700;
 }
